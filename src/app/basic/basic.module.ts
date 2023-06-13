@@ -1,18 +1,17 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AboutComponent } from './about/about.component';
-import { CommitteeComponent } from './committee/committee.component';
-import { ContactComponent } from './contact/contact.component';
-import { TrustComponent } from './trust/trust.component';
-import { SharedModule } from '../shared/shared.module';
-import { RouterModule } from '@angular/router';
-import { BasicRoutes } from './basic.routing';
-import { HomeModule } from '../home/home.module';
-import { InfrastructureComponent } from './infrastructure/infrastructure.component';
-import { ActivityComponent } from './activity/activity.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { AboutComponent } from "./about/about.component";
+import { CommitteeComponent } from "./committee/committee.component";
+import { ContactComponent } from "./contact/contact.component";
+import { TrustComponent } from "./trust/trust.component";
+import { SharedModule } from "../shared/shared.module";
+import { RouterModule } from "@angular/router";
+import { BasicRoutes } from "./basic.routing";
+import { HomeModule } from "../home/home.module";
+import { InfrastructureComponent } from "./infrastructure/infrastructure.component";
+import { ActivityComponent } from "./activity/activity.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -29,8 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RouterModule.forChild(BasicRoutes),
     HomeModule,
     FormsModule,
-    ReactiveFormsModule
-
-  ]
+    ReactiveFormsModule,
+    NgbModule,
+  ],
 })
-export class BasicModule { }
+export class BasicModule {}
